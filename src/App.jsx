@@ -4,19 +4,34 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Todo from "./Todo";
 import Actor from "./Actor";
+import Singer from "./Singer";
 
 function App() {
   // react er component
-  const actors = ['SRK','Salman', 'Saakib', 'Amir', 'Firoz']
+  const actors = ["SRK", "Salman", "Saakib", "Amir", "Firoz"];
+
+  const singers = [
+    { id: 1, name: "Argit sing", age: 36 },
+    { id: 2, name: "Atif aslam", age: 35 },
+    { id: 3, name: "Siya gosal", age: 32 },
+    { id: 4, name: "Kk", age: 46 },
+  ];
 
   return (
     <>
       <h1>Vite + React</h1>
       <Actor name="Bappa Raz"></Actor>
+
       {/* Map */}
-      {
-        actors.map(actor => <Actor name={actor}></Actor>)
-      }
+
+      {singers.map((singer) => (
+        <Singer singer={singer}></Singer>
+      ))}
+
+
+      {actors.map((actor) => (
+        <Actor name={actor}></Actor>
+      ))}
 
       {/* <Todo task="Learn React" isDone={true}></Todo>
       <Todo task="Explore Core concepts" isDone={false}></Todo>
