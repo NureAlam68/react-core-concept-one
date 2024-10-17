@@ -5,7 +5,7 @@ import "./App.css";
 import Todo from "./Todo";
 import Actor from "./Actor";
 import Singer from "./Singer";
-
+import BookStore from "./BookStore";
 function App() {
   // react er component
   const actors = ["SRK", "Salman", "Saakib", "Amir", "Firoz"];
@@ -17,9 +17,17 @@ function App() {
     { id: 4, name: "Kk", age: 46 },
   ];
 
+  const books = [
+    {id:1, name: 'Physics', price: 120},
+    {id:2, name: 'Chemistry', price: 320},
+    {id:3, name: 'Math', price: 220},
+    {id:4, name: 'Biology', price: 100},
+  ]
+
   return (
     <>
       <h1>Vite + React</h1>
+      <BookStore books={books}></BookStore>
       <Actor name="Bappa Raz"></Actor>
 
       {/* Map */}

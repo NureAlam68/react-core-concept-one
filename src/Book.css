@@ -1,0 +1,13 @@
+.book {
+    border: 2px solid violet;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.singer {
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;   
+}
